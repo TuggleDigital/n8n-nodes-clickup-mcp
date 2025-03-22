@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>ClickUp Logo</title>
+    <g id="clickup-logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="background" fill="#7B68EE" cx="30" cy="30" r="30"></circle>
+        <path d="M30,15 C21.727,15 15,21.727 15,30 C15,38.273 21.727,45 30,45 C38.273,45 45,38.273 45,30 C45,21.727 38.273,15 30,15 Z M37.5,32.5 L30,40 L22.5,32.5 C21.167,31.167 21.167,28.833 22.5,27.5 C23.833,26.167 26.167,26.167 27.5,27.5 L30,30 L32.5,27.5 C33.833,26.167 36.167,26.167 37.5,27.5 C38.833,28.833 38.833,31.167 37.5,32.5 Z" id="clickup-icon" fill="#FFFFFF"></path>
+    </g>
+</svg>
