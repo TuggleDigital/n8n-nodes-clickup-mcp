@@ -1,0 +1,38 @@
+version: '3'
+services:
+  n8n:
+    image: n8nio/n8n
+    environment:
+      # MCP server environment variables
+      - MCP_CLICKUP_API_KEY=your-clickup-api-key-here
+      - MCP_CLICKUP_TEAM_ID=your-clickup-team-id-here
+      # Enable community nodes as tools
+      - N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE=true
+      # Database configuration (if using PostgreSQL)
+      # - DB_TYPE=postgresdb
+      # - DB_POSTGRESDB_HOST=postgres
+      # - DB_POSTGRESDB_PORT=5432
+      # - DB_POSTGRESDB_DATABASE=n8n
+      # - DB_POSTGRESDB_USER=n8n
+      # - DB_POSTGRESDB_PASSWORD=your-password
+    ports:
+      - "5678:5678"
+    volumes:
+      - ~/.n8n:/home/node/.n8n
+    # If you're using PostgreSQL, uncomment the following lines
+    # depends_on:
+    #   - postgres
+
+  # postgres:
+  #   image: postgres:15-alpine
+  #   environment:
+  #     - POSTGRES_USER=n8n
+  #     - POSTGRES_PASSWORD=your-password
+  #     - POSTGRES_DB=n8n
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+  #   ports:
+  #     - "5432:5432"
+
+# volumes:
+#   postgres_data:
